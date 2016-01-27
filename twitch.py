@@ -6,9 +6,9 @@ import socket
 # --------------------------------------------- Start Settings ----------------------------------------------------
 HOST = "irc.twitch.tv"                          # Hostname of the IRC-Server in this case twitch's
 PORT = 6667                                     # Default IRC-Port
-CHAN = "#baraafanny"                               # Channelname = #{Nickname}
-NICK = "fannyUBBE"                                # Nickname = Twitch username
-PASS = "oauth:ypqqwqvj55juysolfv2f58ui0d8y14"   # www.twitchapps.com/tmi/ will help to retrieve the required authkey
+CHAN = "#channel"                               # Channelname = #{Nickname}
+NICK = "Username"                               # Nickname = Twitch username
+PASS = "oauth:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"   # www.twitchapps.com/tmi/ will help to retrieve the required authkey
 # --------------------------------------------- End Settings -------------------------------------------------------
 
 
