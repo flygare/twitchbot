@@ -1,8 +1,10 @@
 # twitchbot
-settingsfile layout
+##settingsfile layout
 
-#
-channel = test
-user = test
+
+channel = channelname
+
+user = username
+
 oauth = oauth:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-#
+
