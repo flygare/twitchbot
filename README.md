@@ -1,6 +1,5 @@
-# twitchbot
-##settingsfile layout
-
+# Twitchbot
+## Settingsfile layout
 
 channel = channelname
 
