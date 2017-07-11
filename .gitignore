@@ -81,5 +81,6 @@ celerybeat-schedule
 .spyderproject
 
 #user settings
+.idea
 dist/settings.txt
 settings.txt
