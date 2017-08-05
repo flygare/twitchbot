@@ -6,41 +6,23 @@ import winsound
 from threading import Thread
 import tkinter as tk
 
-
-#channelFile = open('channel.txt', 'r')
-#channelFile = channelFile.read()
-
 keyFile = open('keywords.txt', 'r')
 keyFile = keyFile.read()
 
 bannedFile = open('bannedwords.txt', 'r')
 bannedFile = bannedFile.read()
 
-
-settingsFile = open('settings.txt', 'r')
-chan1 = settingsFile.readline().replace(" ", "")
-nick1 = settingsFile.readline().replace(" ", "")
-pas1 = settingsFile.readline().replace(" ", "")
-
-chan1 = chan1[8:-1]
-nick1 = nick1[5:-1]
-pas1 = pas1[6:]
-
-chan1 = "#"+chan1
-
-
 global senderName
 senderName = ""
 global lastMsg
 lastMsg = ""
 
-
 # --------------------------------------------- Start Settings ----------------------------------------------------
 HOST = "irc.twitch.tv"                          # Hostname of the IRC-Server in this case twitch's
 PORT = 6667                                     # Default IRC-Port
-CHAN = chan1                                 # Channelname = #{Nickname}
-NICK = nick1                                     # Nickname = Twitch username
-PASS = pas1                                     # www.twitchapps.com/tmi/ will help to retrieve the required authkey
+CHAN = ""                                       # Channelname = #{Nickname}
+NICK = ""                                       # Nickname = Twitch username
+PASS = ""                                       # www.twitchapps.com/tmi/ will help to retrieve the required authkey
 # --------------------------------------------- End Settings -------------------------------------------------------
 
 
@@ -147,12 +129,8 @@ send_pass(PASS)
 send_nick(NICK)
 join_channel(CHAN)
 
-
 def beepFunction():
     beep()
-
-
-
 
 def firstFunction():
     root = tk.Tk()
@@ -202,5 +180,4 @@ t2 = Thread(target=secondFunction)
 
 t1.start()
 t2.start()
-
 

@@ -64,9 +64,7 @@ def parse_message(msg):
     if len(msg) >= 1:
         msg = msg.split(' ')
         options = {'!commands' : command_com,
-                   '!mod': command_mod,
-                   '!clown': command_clown,
-                   '!plodelo': command_plodelo}
+                   '!example': command_mod,
         if msg[0] in options:
             options[msg[0]]()
 # --------------------------------------------- End Helper Functions -----------------------------------------------
@@ -74,19 +72,10 @@ def parse_message(msg):
 
 # --------------------------------------------- Start Command Functions --------------------------------------------
 def command_com():
-    send_message(CHAN, '!ubbe, !mod, !clown, !plodelo')
+    send_message(CHAN, '!example')
 
-def command_fannyUBBE():
-    send_message(CHAN, 'fannyUBBE')
-
-def command_plodelo():
-    send_message(CHAN, '6k PogChamp')
-
-def command_mod():
-    send_message(CHAN, 'Drama is the greatest nazi mod on twitch Kappa')
-
-def command_clown():
-    send_message(CHAN, 'WutFace')
+def command_example():
+    send_message(CHAN, 'Example message')
 # --------------------------------------------- End Command Functions ----------------------------------------------
 
 con = socket.socket()

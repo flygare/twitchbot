@@ -1,9 +1,5 @@
 # Twitchbot
-## Settingsfile layout
 
-channel = channelname
+Minimal example of working twitch bot with functions like timeout and permit requests.
 
-user = username
-
-oauth = oauth:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
+Add your name to keywords.txt to be notified by mentions 
